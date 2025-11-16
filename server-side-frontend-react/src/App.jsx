@@ -16,11 +16,14 @@ export default function App() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    const res = await fetch("http://localhost:3000/submit", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    });
+    const res = await fetch(
+      "https://ssr-login-page-production.up.railway.app/submit",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      }
+    );
     const data = await res.json();
     setResponse(data);
   }
