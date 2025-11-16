@@ -31,7 +31,7 @@ export default function App() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900 p-4">
       <div className="backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl rounded-3xl p-10 w-full max-w-md text-white">
-        <h1 className="text-3xl font-bold mb-6 text-center">User Form</h1>
+        <h1 className="text-3xl font-bold mb-6 text-center">LOGIN FORM</h1>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
